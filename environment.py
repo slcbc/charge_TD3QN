@@ -114,9 +114,9 @@ class Env():
                 b = round(random.uniform(-0.5, 0.5), 2)
                 self.nodesX[i] += a
                 self.nodesY[i] += b
-                if -45 < self.nodesX[i] < 45:
+                if self.nodesX[i] < -45 or self.nodesX[i] > 45:
                     self.nodesY[i] -= a
-                if -45 < self.nodesY[i] < 45:
+                if self.nodesY[i] < -45 or self.nodesY[i] > 45:
                     self.nodesY[i] -= b
 
 
